@@ -1,6 +1,6 @@
 <html __fvdsurfcanyoninserted="1" class=" clickberry-extension clickberry-extension-standalone clickberry-extension clickberry-extension-standalone clickberry-extension clickberry-extension-standalone"><head>
         <meta charset="UTF-8">
-        <title>Happy Birthday Nisreen🎂☺</title>
+        <title>Happy Birthday Mariyah🎂☺</title>
         
         <script>
             document.addEventListener("DOMContentLoaded", function() {
@@ -39,12 +39,12 @@
             }
 			
 			body {
-  background-image: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 100, color-stop(0%, #374566), color-stop(100%, #010203));
-  background-image: -webkit-radial-gradient(#374566, #010203);
-  background-image: -moz-radial-gradient(#374566, #010203);
-  background-image: -o-radial-gradient(#374566, #010203);
-  background-image: radial-gradient(#374566, #010203);
-}
+                background-image: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 100, color-stop(0%, #374566), color-stop(100%, #010203));
+                background-image: -webkit-radial-gradient(#374566, #010203);
+                background-image: -moz-radial-gradient(#374566, #010203);
+                background-image: -o-radial-gradient(#374566, #010203);
+                background-image: radial-gradient(#374566, #010203);
+            }
             span {
                 text-transform: uppercase;
             }
@@ -62,8 +62,8 @@
                 position: relative;
             }
             .balloon > div {
-                width: 104px;
-                height: 140px;
+                width: 87px;
+                height: 130px;
                 background: rgba(182, 15, 97, 0.9);
                 border-radius: 0;
                 border-radius: 80% 80% 80% 80%;
@@ -148,8 +148,8 @@
             .balloon > div:before {
                 color: rgba(182, 15, 97, 0.9);
                 position: absolute;
-                bottom: -11px;
-                left: 52px;
+                bottom: -20px;
+                left: 32px;
                 content:"▲";
                 font-size: 1em;
             }
@@ -293,24 +293,44 @@
                     transform: translate(-15px, 10px) rotate(10deg);
                 }
             }
-            h1 {
+            h3 {
                 position: relative;
                 top: 200px;
                 text-align: center;
                 color: white;
-                font-size: 3.5em;
+                font-size: 2em;
             }
             p {
                 position: relative;
                 top: 200px;
                 color: white;
                 text-align: center;
-                font-size: x-large;
+                font-size: large;
             }
             .audio-div{
                 top:300px;
             }
-        </style>
+            .heart {
+                fill: red;
+                position: fixed;
+                z-index: -1;
+                top: 200px;
+                left: 280px;
+                width: 400px;
+                animation: pulse 1s ease infinite;
+            }
+
+            @keyframes pulse {
+                0% { transform: scale(0.66); }
+                50% { transform: scale(0.72); }
+                100% { transform: scale(0.66); }
+            }
+            .mySlides {
+                display: none;
+                width: 300px;
+                height: 200px;
+            }   
+    </style>
     <body>
         <link href="https://fonts.googleapis.com/css?family=Wendy+One" rel="stylesheet" type="text/css">
         <div class="container">
@@ -328,10 +348,33 @@
                 <div><span>!</span>
                 </div>
             </div>
-             <h1>🥳🎂Wish U The Happiest Birthday Nisreen🎂🥳</h1>
-             <p>Wishing you a day filled with love, laughter, and all the happiness in the world. <br/>May this year be your best one yet, filled with unforgettable moments and exciting adventures. <br/>Cheers to you and all the wonderful memories we've shared, and (Khuda kare) we will be together in future... (Inshallah) Enjoy your special day to the fullest. 🎈🥳</p>
+             <h3>❤️🎂Wish U The Happiest Birthday Meri Jaannn Mariyahh🎂❤️</h3>
+             <div class="">
+                <div><svg class="heart" viewBox="0 0 32 29.6">
+                    <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
+                      c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z"/>
+                  
+                    </svg> 
+                </div>
+                <div>
+                    <p>Wishing you a day filled with love, laughter, and all the happiness in the world. May this year be your best one yet, filled
+                        with unforgettable moments and exciting adventures. Cheers to you and all the wonderful memories we've shared, and Khuda si ekj dua che k 
+                        we will be together until we die... (Inshallah) Enjoy your special day to the fullest. 🎈🥳</p>
+                </div>
+             </div>
         </div>
         <br><br>
+        <div>
+            <img class="mySlides" src="Images/IMG1.jpg">
+            <img class="mySlides" src="Images/IMG2.jpg">
+            <img class="mySlides" src="Images/IMG3.jpg">
+            <img class="mySlides" src="Images/IMG4.jpg">
+            <img class="mySlides" src="Images/IMG5.jpg">
+            <img class="mySlides" src="Images/IMG6.jpg">
+            <img class="mySlides" src="Images/IMG7.jpg">
+            <img class="mySlides" src="Images/IMG8.jpg">
+            <img class="mySlides" src="Images/IMG9.jpg">
+        </div>
         <div>
             <audio id="myAudio" preload="auto">
                 <source src="song\38-Michael-Riepen-Happy-Birthday.mp3" type="audio/mpeg">
@@ -344,6 +387,20 @@
             </div>
          </div>
         <script>
+            var slideIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1}
+  x[slideIndex-1].style.display = "block";
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
             if (document.location.search.match(/type=embed/gi)) {
                 window.parent.postMessage('resize', "*");
             }
