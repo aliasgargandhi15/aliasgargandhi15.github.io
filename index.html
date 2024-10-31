@@ -311,8 +311,8 @@
                 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
                 font-size: x-large;
             }
-            .audio-div{
-                top:300px;
+            .video-div{
+                padding-top:10%;;
             }
             .heart {
                 fill: red;
@@ -337,7 +337,7 @@
             .img-div{
                 display: flex;
                 justify-content: center;
-                padding-top: 50%;
+                padding-top: 40%;
                 padding-bottom: 10%;
             }
     </style>
@@ -367,9 +367,13 @@
                     </svg> 
                 </div>
                 <div>
-                    <p>Wishing you a day filled with love, laughter, and all the happiness in the world. May this year be your best one yet, filled
-                        with unforgettable moments and exciting adventures. Cheers to you and all the wonderful memories we've shared, Khuda Taala si dua che tamari sagli umeed puri thai, jaldi Quraan Hafiz
-                        thai jaav ane apna beve ni jodi salamat rahe. Aameen.... 🎈🥳</p>
+                    <p>Happy Birthday, my love! 🎉 Even though we’re miles apart, you’re always close to my heart. 
+                        I wish I could be there to celebrate with you, but know that I’m sending all my love your way. 
+                        I hope your day is filled with joy, laughter, and all the things you love.
+                        May this year be your best one yet, filled with unforgettable moments and exciting adventures.
+                        Can’t wait until we can celebrate together! 
+                         Cheers to you and all the wonderful memories we've shared, Khuda Taala si dua che tamari sagli umeed puri thai, jaldi Quraan Hafiz
+                        thai jaav ane apna beve no jodo salamat rahe. Aameen.... 🎈🥳</p>
                         <p>I Love You Sooooo Sooooo Soooo Muchhhhh Jaannnnn 💋❤️🫶🏻</p>
                         <p>Misss Youuu a Lottttt 🥺🥺🥺🥺🫂🫂🫂🫂</p>
                 </div>
@@ -378,13 +382,13 @@
         <br><br>
         <div class="img-div">
             <img class="mySlides w3-animate-fading" src="Images/IMG1.jpg">
+            <img class="mySlides w3-animate-fading" src="Images/IMG2.jpg">
             <img class="mySlides w3-animate-fading" src="Images/IMG3.jpg">
             <img class="mySlides w3-animate-fading" src="Images/IMG4.jpg">
             <img class="mySlides w3-animate-fading" src="Images/IMG5.jpg">
             <img class="mySlides w3-animate-fading" src="Images/IMG6.jpg">
             <img class="mySlides w3-animate-fading" src="Images/IMG7.jpg">
             <img class="mySlides w3-animate-fading" src="Images/IMG8.jpg">
-            <img class="mySlides w3-animate-fading" src="Images/IMG9.jpg">
         </div>
         <div>
             <audio id="myAudio" preload="auto">
@@ -392,11 +396,16 @@
                 Your browser does not support the audio element.
             </audio>
         
-            <div class="audio-div text-center">
+            <div class="text-center">
                 <button class="btn btn-primary p-4" id="playButton">&#9658; Birthday Song</button>
                 <button class="btn btn-danger p-4" id="pauseButton">&#10074;&#10074; Pause</button>
             </div>
-         </div>
+        </div>
+        <div class="text-center video-div">
+            <video width="320" height="240" controls>
+                <source src="movie.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+        </div>
         <script>
             var slideIndex = 0;
 carousel();
